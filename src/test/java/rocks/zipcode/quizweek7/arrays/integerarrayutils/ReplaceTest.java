@@ -7,7 +7,7 @@ import rocks.zipcode.quizweek7.arrays.IntegerArrayUtils;
 /**
  * @author leon on 28/11/2018.
  */
-public class InsertTest {
+public class ReplaceTest {
     @Test
     public void testInsert1() {
         // Given
@@ -17,7 +17,7 @@ public class InsertTest {
         Integer[] expected = {1,2,5,valueToBeInserted};
 
         // when
-        Integer[] actual = IntegerArrayUtils.insert(input, indexToInsertAt, valueToBeInserted);
+        Integer[] actual = IntegerArrayUtils.replace(input, indexToInsertAt, valueToBeInserted);
 
         // then
         Assert.assertEquals(expected, actual);
@@ -32,7 +32,7 @@ public class InsertTest {
         Integer[] expected = {valueToBeInserted,2,5,8};
 
         // when
-        Integer[] actual = IntegerArrayUtils.insert(input, indexToInsertAt, valueToBeInserted);
+        Integer[] actual = IntegerArrayUtils.replace(input, indexToInsertAt, valueToBeInserted);
 
         // then
         Assert.assertEquals(expected, actual);

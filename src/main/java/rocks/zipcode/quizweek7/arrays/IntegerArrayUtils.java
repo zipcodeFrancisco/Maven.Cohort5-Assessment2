@@ -17,9 +17,9 @@ public class IntegerArrayUtils {
      * @param integerArray - array to be manipulated
      * @param indexToInsertAt - index of the element to be inserted at
      * @param valueToBeInserted - value of the element to be inserted
-     * @return `integerArray` with `valueToBeInserted` at index number` indexToInsertAt`
+     * @return `integerArray` with `valueToBeInserted` at index number `indexToInsertAt`
      */
-    public static Integer[] insert(Integer[] integerArray, int indexToInsertAt, Integer valueToBeInserted) {
+    public static Integer[] replace(Integer[] integerArray, int indexToInsertAt, Integer valueToBeInserted) {
         return null;
     }
 
