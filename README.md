@@ -1,4 +1,4 @@
-# Quiz 2
+# Assessment 2
 
 ## Part 1 - Fundamentals
 
