@@ -81,18 +81,8 @@
 
 
 ## Part 5 - Generics
-`Shelter` is a generic class that holds Objects which extend `Ageable`.
-For example, if a `Person` and a `Dog` extend `Ageable`, then I can declare the following:
-
-```
-Shelter<Person> farmHouse = new Shelter<Person>();
-Shelter<Dog> dogHouse = new Shelter<Dog>();
-```
-
-You only need to edit the `Shelter` class.
-
-Add the following methods to the `Shelter` class:
-1. `int size()` returns the number of objects in the shelter
-2. `void add(ager)` adds a new object to the shelter
-3. `removeLast()` removes the last object added from the shelter and return it. If the shelter is empty, then return null.
-4. `getYoungest` returns the youngest ageable object in the shelter. For example, if Mimi who is born in  2000, and John who is born in 2010, then the method should return John because John was born after Mimi, therefore he is younger than Mimi.
+### Shelter
+* `Integer size()`
+* `void add(Ageable)`
+* `removeLast()`
+* `getYoungest()`
