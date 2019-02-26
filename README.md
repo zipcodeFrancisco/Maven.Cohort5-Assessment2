@@ -81,9 +81,8 @@
 
 
 ## Part 5 - Generics
-To complete this portion, merge in the `generic` branch with `git merge origin/generic`.
-
-`Shelter` is a generic class that holds Objects that extends `Ageable`. For example, if a Person and a Dog extends Ageable, then I can declare the following:
+`Shelter` is a generic class that holds Objects which extend `Ageable`.
+For example, if a `Person` and a `Dog` extend `Ageable`, then I can declare the following:
 
 ```
 Shelter<Person> farmHouse = new Shelter<Person>();
