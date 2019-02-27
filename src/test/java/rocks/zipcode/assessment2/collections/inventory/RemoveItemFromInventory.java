@@ -5,41 +5,43 @@ import org.junit.Test;
 import rocks.zipcode.assessment2.collections.Inventory;
 
 public class RemoveItemFromInventory {
-
     @Test
     public void test1() {
-        Inventory inventory = new Inventory();
-
-        inventory.addItemToInventory("Basketball");
-        inventory.removeItemFromInventory("Basketball");
-        Assert.assertEquals(Integer.valueOf(0), inventory.getItemQuantity("Basketball"));
-
-        inventory.removeItemFromInventory("Basketball");
-        Assert.assertEquals(Integer.valueOf(0), inventory.getItemQuantity("Basketball"));
+        String itemToBeRemoved = "Football";
+        String[] itemsTobeAdded = {"Baseball", "Baseball", "Basketball", itemToBeRemoved};
+        test(itemsTobeAdded, itemToBeRemoved);
     }
+
 
     @Test
     public void test2() {
-        Inventory inventory = new Inventory();
-
-        inventory.addItemToInventory("Baseball");
-        inventory.addItemToInventory("Rake");
-        inventory.removeItemFromInventory("Baseball");
-        Assert.assertEquals(Integer.valueOf(0), inventory.getItemQuantity("Baseball"));
-        Assert.assertEquals(Integer.valueOf(1), inventory.getItemQuantity("Rake"));
+        String itemToBeRemoved = "Baseball";
+        String[] itemsTobeAdded = {itemToBeRemoved, "Baseball", "Basketball", "Football"};
+        test(itemsTobeAdded, itemToBeRemoved);
     }
 
-    private void test(String[] itemsToAdd, String itemToRemove) {
+    @Test
+    public void test3() {
+        String itemToBeRemoved = "Basketball";
+        String[] itemsTobeAdded = {"Baseball", "Baseball", itemToBeRemoved, "Football"};
+        test(itemsTobeAdded, itemToBeRemoved);
+    }
+
+
+    private void test(String[] itemsToAddToInventory, String itemToRemove) {
         // given
         Inventory inventory = new Inventory();
-        for(String item : itemsToAdd) {
+        for(String item : itemsToAddToInventory) {
             inventory.addItemToInventory(item);
         }
+        int preRemovalQuantity = inventory.getItemQuantity(itemToRemove);
+        int expectedPostRemovalQuantity = preRemovalQuantity - 1;
 
         // when
         inventory.removeItemFromInventory(itemToRemove);
+        int actualPostRemovalQuantity = inventory.getItemQuantity(itemToRemove);
 
         // then
-        Assert.assertEquals(inventory.);
+        Assert.assertEquals(expectedPostRemovalQuantity, actualPostRemovalQuantity);
     }
 }

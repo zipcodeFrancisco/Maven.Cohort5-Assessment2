@@ -34,5 +34,21 @@ public class UnlistItem {
     }
 
 
+    private void test(String[] itemsToAddToInventory, String itemToRemove) {
+        // given
+        int expected = 0;
+        Inventory inventory = new Inventory();
+        for (String item : itemsToAddToInventory) {
+            inventory.addItemToInventory(item);
+        }
+
+        // when
+        inventory.unlistItem(itemToRemove);
+        int actual = inventory.getItemQuantity(itemToRemove);
+
+        // then
+        Assert.assertEquals(expected, actual);
+    }
+
 
 }
