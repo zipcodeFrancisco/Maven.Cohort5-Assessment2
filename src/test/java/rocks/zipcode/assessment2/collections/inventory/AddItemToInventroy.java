@@ -7,17 +7,35 @@ import rocks.zipcode.assessment2.collections.Inventory;
 public class AddItemToInventroy {
 
     @Test
+    public void test0() {
+        test("");
+    }
+
+    @Test
     public void test1() {
+        test("Lamp", "Lamp", "Shade", "Lightbulb");
+    }
+
+    @Test
+    public void test2() {
+        test("Lamp", "Lamp", "Shade", "Lightbulb", "Lightbulb");
+    }
+
+    @Test
+    public void test3() {
+        test("Lamp", "Lamp", "Shade", "Shade");
+    }
+
+    private void test(String... itemsToAddToInventory) {
         Inventory inventory = new Inventory();
-        inventory.addItemToInventory("Lamp");
+        for(String item : itemsToAddToInventory) {
+            int preAddQuantity = inventory.getItemQuantity(item);
+            int postAddQuantity = preAddQuantity + 1;
+            int expected = postAddQuantity;
+            inventory.addItemToInventory(item);
+            int actual = inventory.getItemQuantity(item);
 
-        Assert.assertEquals(Integer.valueOf(1) ,inventory.getItemQuantity("Lamp"));
-
-        inventory.addItemToInventory("Lamp");
-        Assert.assertEquals(Integer.valueOf(2) ,inventory.getItemQuantity("Lamp"));
-
-        inventory.addItemToInventory("Basketball");
-        Assert.assertEquals(Integer.valueOf(2) ,inventory.getItemQuantity("Lamp"));
-        Assert.assertEquals(Integer.valueOf(1) ,inventory.getItemQuantity("Basketball"));
+            Assert.assertEquals(expected, actual);
+        }
     }
 }

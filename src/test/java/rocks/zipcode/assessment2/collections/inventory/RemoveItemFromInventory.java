@@ -28,4 +28,18 @@ public class RemoveItemFromInventory {
         Assert.assertEquals(Integer.valueOf(0), inventory.getItemQuantity("Baseball"));
         Assert.assertEquals(Integer.valueOf(1), inventory.getItemQuantity("Rake"));
     }
+
+    private void test(String[] itemsToAdd, String itemToRemove) {
+        // given
+        Inventory inventory = new Inventory();
+        for(String item : itemsToAdd) {
+            inventory.addItemToInventory(item);
+        }
+
+        // when
+        inventory.removeItemFromInventory(itemToRemove);
+
+        // then
+        Assert.assertEquals(inventory.);
+    }
 }
