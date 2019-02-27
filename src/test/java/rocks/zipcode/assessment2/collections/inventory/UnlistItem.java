@@ -5,33 +5,28 @@ import org.junit.Test;
 import rocks.zipcode.assessment2.collections.Inventory;
 
 public class UnlistItem {
-
     @Test
     public void test1() {
-        Inventory inventory = new Inventory();
-        inventory.addItemToInventory("Baseball");
-        inventory.addItemToInventory("Baseball");
-        inventory.addItemToInventory("Baseball");
-
-        inventory.unlistItem("Baseball");
-        Assert.assertEquals(Integer.valueOf(0), inventory.getItemQuantity("Baseball"));
-        inventory.addItemToInventory("Basketball");
-        inventory.addItemToInventory("Baseball");
-        inventory.unlistItem("Basketball");
-        Assert.assertEquals(Integer.valueOf(0), inventory.getItemQuantity("Basketball"));
-        Assert.assertEquals(Integer.valueOf(1), inventory.getItemQuantity("Baseball"));
+        String itemToBeCleared = "Football";
+        String[] itemsTobeAdded = {"Baseball", "Baseball", "Basketball", itemToBeCleared};
+        test(itemsTobeAdded, itemToBeCleared);
     }
+
 
     @Test
     public void test2() {
-        Inventory inventory = new Inventory();
-        inventory.addItemToInventory("Lamp");
-        inventory.addItemToInventory("Lamp");
-        inventory.addItemToInventory("Lamp");
-
-        inventory.unlistItem("Cheesesteak");
-        Assert.assertEquals(Integer.valueOf(3), inventory.getItemQuantity("Lamp"));
+        String itemToBeCleared = "Baseball";
+        String[] itemsTobeAdded = {itemToBeCleared, itemToBeCleared, "Basketball", "Football"};
+        test(itemsTobeAdded, itemToBeCleared);
     }
+
+    @Test
+    public void test3() {
+        String itemToBeCleared = "Basketball";
+        String[] itemsTobeAdded = {"Baseball", "Baseball", itemToBeCleared, "Football"};
+        test(itemsTobeAdded, itemToBeCleared);
+    }
+
 
 
     private void test(String[] itemsToAddToInventory, String itemToRemove) {

@@ -16,7 +16,7 @@ public class RemoveItemFromInventory {
     @Test
     public void test2() {
         String itemToBeRemoved = "Baseball";
-        String[] itemsTobeAdded = {itemToBeRemoved, "Baseball", "Basketball", "Football"};
+        String[] itemsTobeAdded = {itemToBeRemoved, itemToBeRemoved, "Basketball", "Football"};
         test(itemsTobeAdded, itemToBeRemoved);
     }
 
