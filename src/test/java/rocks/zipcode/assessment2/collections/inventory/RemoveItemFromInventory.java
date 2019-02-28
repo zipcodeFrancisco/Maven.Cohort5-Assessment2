@@ -4,6 +4,9 @@ import org.junit.Assert;
 import org.junit.Test;
 import rocks.zipcode.assessment2.collections.Inventory;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class RemoveItemFromInventory {
     @Test
     public void test1() {
@@ -30,10 +33,8 @@ public class RemoveItemFromInventory {
 
     private void test(String[] itemsToAddToInventory, String itemToRemove) {
         // given
-        Inventory inventory = new Inventory();
-        for(String item : itemsToAddToInventory) {
-            inventory.addItemToInventory(item);
-        }
+        Inventory inventory = new Inventory(new ArrayList<>(Arrays.asList(itemsToAddToInventory)));
+
         int preRemovalQuantity = inventory.getItemQuantity(itemToRemove);
         int expectedPostRemovalQuantity = preRemovalQuantity - 1;
 

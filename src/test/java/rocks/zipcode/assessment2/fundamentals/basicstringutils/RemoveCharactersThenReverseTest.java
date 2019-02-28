@@ -7,22 +7,22 @@ import rocks.zipcode.assessment2.fundamentals.BasicStringUtils;
 public class RemoveCharactersThenReverseTest {
     @Test
     public void test1() {
-        test("Feelers", "er", "Fls");
+        test("Feelers", "er", "slF");
     }
 
     @Test
     public void test2() {
-        test("Takers", "ers", "Tak");
+        test("Takers", "ers", "kaT");
     }
 
     @Test
     public void test3() {
-        test("Takers", "res", "Tak");
+        test("Takers", "res", "kaT");
     }
 
     @Test
     public void test4() {
-        test("breaking", "kaer", "bing");
+        test("breaking", "kaer", "gnib");
     }
 
     private void test(String stringToManipulate, String charactersToRemove, String expected) {

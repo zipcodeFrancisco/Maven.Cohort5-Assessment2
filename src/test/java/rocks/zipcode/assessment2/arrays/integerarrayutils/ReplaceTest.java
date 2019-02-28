@@ -20,7 +20,7 @@ public class ReplaceTest {
         Integer[] actual = IntegerArrayUtils.replace(input, indexToInsertAt, valueToBeInserted);
 
         // then
-        Assert.assertEquals(expected, actual);
+        Assert.assertArrayEquals(expected, actual);
     }
 
     @Test
@@ -35,6 +35,6 @@ public class ReplaceTest {
         Integer[] actual = IntegerArrayUtils.replace(input, indexToInsertAt, valueToBeInserted);
 
         // then
-        Assert.assertEquals(expected, actual);
+        Assert.assertArrayEquals(expected, actual);
     }
 }

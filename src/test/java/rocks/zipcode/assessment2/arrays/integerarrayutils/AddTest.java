@@ -19,7 +19,7 @@ public class AddTest {
         Integer[] actual = IntegerArrayUtils.add(intArray, valueToBeAdded);
 
         // then
-        Assert.assertEquals(expected, actual);
+        Assert.assertArrayEquals(expected, actual);
     }
 
     @Test
@@ -35,6 +35,6 @@ public class AddTest {
         actual = IntegerArrayUtils.add(actual, secondValueToBeAdded);
 
         // then
-        Assert.assertEquals(expected, actual);
+        Assert.assertArrayEquals(expected, actual);
     }
 }
