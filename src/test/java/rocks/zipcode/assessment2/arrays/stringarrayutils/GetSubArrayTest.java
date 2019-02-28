@@ -12,7 +12,7 @@ public class GetSubArrayTest {
     public void testGetSubArrayFrom0To2() {
         // given
         String[] input = {"The", "Quick", "Brown", "Fox", "Jumps"};
-        String[] expected = {"The", "Quick", "Brown"};
+        String[] expected = {"The", "Quick"};
         int startIndex = 0;
         int endIndex = 2;
 
@@ -20,14 +20,14 @@ public class GetSubArrayTest {
         String[] actual = StringArrayUtils.getSubArray(input, startIndex, endIndex);
 
         // Then
-        Assert.assertEquals(expected, actual);
+        Assert.assertArrayEquals(expected, actual);
     }
 
     @Test
     public void testGetSubArrayFrom1To3() {
         // given
         String[] input = {"The", "Quick", "Brown", "Fox", "Jumps"};
-        String[] expected = {"Quick", "Brown", "Fox"};
+        String[] expected = {"Quick", "Brown"};
         int startIndex = 1;
         int endIndex = 3;
 
@@ -35,7 +35,7 @@ public class GetSubArrayTest {
         String[] actual = StringArrayUtils.getSubArray(input, startIndex, endIndex);
 
         // Then
-        Assert.assertEquals(expected, actual);
+        Assert.assertArrayEquals(expected, actual);
     }
 
     @Test(expected = IndexOutOfBoundsException.class)
