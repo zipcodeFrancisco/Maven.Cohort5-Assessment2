@@ -41,6 +41,12 @@
 * `getEndingArray(String[], int): String[]`
 
 ## Part 3 - Object Orientation
+* Complete this section in the following order:
+  1. `Address`
+  2. `Person`
+  3. `Animal`
+  4. `Dog`
+
 ### Address
 * `Address()`
 * `Address(String, String, String, String, String)`
