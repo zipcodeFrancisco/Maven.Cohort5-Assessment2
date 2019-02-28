@@ -12,11 +12,6 @@ import rocks.zipcode.assessment2.objectorientation.animals.Animal;
 public class AnimalConstructorTest {
 
     @Test
-    public void theTest() {
-        nullaryConstructor();
-        nonNullaryConstructor();
-    }
-
     public void nullaryConstructor() {
         // Given
         Person expectedOwner = new Person();
@@ -35,6 +30,7 @@ public class AnimalConstructorTest {
         Assert.assertEquals(expectedAddress, actualAddress);
     }
 
+    @Test
     public void nonNullaryConstructor() {
         // Given
         Person expectedOwner = new Person(null, null, new Address());
