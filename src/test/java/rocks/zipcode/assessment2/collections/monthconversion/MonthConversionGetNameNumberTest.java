@@ -72,11 +72,11 @@ public class MonthConversionGetNameNumberTest {
     public void testGetNumber_whenMultipleExist(){
         //Given
         MonthConversion conversion = new MonthConversion();
-        String month = "May";
+        String month = "fdsafd";
         Integer expectedNumber = 5;
-        conversion.add(4, "April");
+        conversion.add(4, "fdasfds");
         conversion.add(expectedNumber, month);
-        conversion.add(6, "June");
+        conversion.add(6, "dfsafdsa");
 
         //When
         Integer actualNumber = conversion.getNumber(month);
@@ -90,8 +90,8 @@ public class MonthConversionGetNameNumberTest {
         //Given
         MonthConversion conversion = new MonthConversion();
 
-        conversion.add(4, "April");
-        conversion.add(6, "June");
+        conversion.add(4, "abtbfd");
+        conversion.add(6, "kyghkjg");
 
 
         //When

@@ -10,7 +10,7 @@ public class MonthConversionValidTest {
     public void testIsValidNumber_whenExist(){
         //Given
         MonthConversion conversion = new MonthConversion();
-        String expectedMonth = "March";
+        String expectedMonth = "faewdsv";
         Integer number = 3;
         conversion.add(number, expectedMonth);
 
@@ -25,7 +25,7 @@ public class MonthConversionValidTest {
     public void testIsValidNumber_whenNotExist(){
         //Given
         MonthConversion conversion = new MonthConversion();
-        String expectedMonth = "March";
+        String expectedMonth = "fdsabreab";
         Integer number = 3;
         conversion.add(number, expectedMonth);
 
@@ -43,9 +43,9 @@ public class MonthConversionValidTest {
         MonthConversion conversion = new MonthConversion();
         String month = "May";
         Integer expectedNumber = 5;
-        conversion.add(4, "April");
+        conversion.add(4, "kjhfkytjd");
         conversion.add(expectedNumber, month);
-        conversion.add(6, "June");
+        conversion.add(6, "45yrhjtum");
 
         //When
         Boolean actual = conversion.isValidMonth(month);
@@ -58,7 +58,7 @@ public class MonthConversionValidTest {
     public void testIsValidMonth_whenNotExist(){
         //Given
         MonthConversion conversion = new MonthConversion();
-        conversion.add(4, "April");
+        conversion.add(4, "mv7yymhg");
 
         //When
         Boolean actual = conversion.isValidMonth("aa");

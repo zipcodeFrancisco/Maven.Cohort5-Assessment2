@@ -11,10 +11,10 @@ public class GetSubArrayTest {
     @Test
     public void testGetSubArrayFrom0To2() {
         // given
-        String[] input = {"The", "Quick", "Brown", "Fox", "Jumps"};
-        String[] expected = {"The", "Quick"};
-        int startIndex = 0;
-        int endIndex = 2;
+        String[] input = {"She", "sells", "sea", "shells", "by", "the", "sea", "shore"};
+        String[] expected = {"sells", "sea"};
+        int startIndex = 1;
+        int endIndex = 3;
 
         // when
         String[] actual = StringArrayUtils.getSubArray(input, startIndex, endIndex);
@@ -26,10 +26,10 @@ public class GetSubArrayTest {
     @Test
     public void testGetSubArrayFrom1To3() {
         // given
-        String[] input = {"The", "Quick", "Brown", "Fox", "Jumps"};
-        String[] expected = {"Quick", "Brown"};
-        int startIndex = 1;
-        int endIndex = 3;
+        String[] input = {"She", "sells", "sea", "shells", "by", "the", "sea", "shore"};
+        String[] expected = {"shells", "by", "the"};
+        int startIndex = 3;
+        int endIndex = 6;
 
         // when
         String[] actual = StringArrayUtils.getSubArray(input, startIndex, endIndex);
@@ -41,9 +41,9 @@ public class GetSubArrayTest {
     @Test(expected = IndexOutOfBoundsException.class)
     public void testGetSubArrayOutOfBounds1() {
         // given
-        String[] input = {"The", "Quick", "Brown", "Fox", "Jumps"};
-        int startIndex = 98;
-        int endIndex = 99;
+        String[] input = {"She", "sells", "sea", "shells", "by", "the", "sea", "shore"};
+        int startIndex = 74;
+        int endIndex = 76;
 
         // when
         StringArrayUtils.getSubArray(input, startIndex, endIndex);
@@ -52,9 +52,9 @@ public class GetSubArrayTest {
     @Test(expected = IllegalArgumentException.class)
     public void testGetSubArrayOutOfBounds2() {
         // given
-        String[] input = {"The", "Quick", "Brown", "Fox", "Jumps"};
-        int startIndex = -1;
-        int endIndex = -10;
+        String[] input = {"She", "sells", "sea", "shells", "by", "the", "sea", "shore"};
+        int startIndex = -150;
+        int endIndex = -273;
 
         // when
         StringArrayUtils.getSubArray(input, startIndex, endIndex);

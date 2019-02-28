@@ -7,22 +7,22 @@ import rocks.zipcode.assessment2.fundamentals.BasicStringUtils;
 public class RemoveCharactersTest {
     @Test
     public void test1() {
-        test("racecar", "r", "aceca");
+        test("ababababa", "a", "bbbb");
     }
 
     @Test
     public void test2() {
-        test("basketball", "b", "asketall");
+        test("umbrella", "l", "umbrea");
     }
 
     @Test
     public void test3() {
-        test("basketball", "teks", "baball");
+        test("basketball", "la", "bsketb");
     }
 
     @Test
     public void test4() {
-        test("football", "fto", "ball");
+        test("Doliod", "Do", "lid");
     }
 
     private void test(String string, String charactersToRemove, String expectedString) {

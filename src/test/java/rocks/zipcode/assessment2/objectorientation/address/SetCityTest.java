@@ -12,7 +12,7 @@ public class SetCityTest {
     public void test1() {
         // Given
         Address address = new Address();
-        String expected = "Philadelphia";
+        String expected = "jrbhnrttht";
 
         // when
         address.setCity(expected);
@@ -26,7 +26,7 @@ public class SetCityTest {
     public void test2() {
         // Given
         Address address = new Address();
-        String expected = "New York";
+        String expected = "hy534¨e1ahergw";
 
         // when
         address.setCity(expected);

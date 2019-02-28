@@ -7,27 +7,27 @@ import rocks.zipcode.assessment2.fundamentals.PredicateUtilities;
 public class StartsWithCapitalLetterTest {
     @Test
     public void test1() {
-        test("The", true);
+        test("TEJisafo", true);
     }
 
     @Test
     public void test2() {
-        test("quick", false);
+        test("nvghuisug", false);
     }
 
     @Test
     public void test3() {
-        test("%^&*", false);
+        test("y1823i912", false);
     }
 
     @Test
     public void test4() {
-        test("fox", false);
+        test("8615", false);
     }
 
     @Test
     public void test5() {
-        test("Jumps", true);
+        test("Y", true);
     }
 
 

@@ -26,10 +26,10 @@ public class PersonToStringTest {
     @Test
     public void testConstructor() {
         // given
-        Long id = Long.MAX_VALUE;
-        String name = "PersonName";
+        Long id = 987L;
+        String name = "fdafdas";
         Address address = new Address("line1","line2", "city","state","99999");
-        String expected = "Person{id=9223372036854775807, name='PersonName', address=Address{addressLine1='line1', addressLine2='line2', city='city', state='state', zipcode='99999'}}";
+        String expected = "Person{id=987, name='fdafdas', address=Address{addressLine1='line1', addressLine2='line2', city='city', state='state', zipcode='99999'}}";
         Person person = new Person(id, name, address);
 
         // when

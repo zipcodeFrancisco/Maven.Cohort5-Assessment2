@@ -14,7 +14,7 @@ public class ShelterGetIndexOfTest {
     @Test
     public void testPerson() {
         // given
-        int numberOfPerson = 10;
+        int numberOfPerson = 14;
         Supplier<Ageable> supplier = Person::new;
         Shelter<Person> shelter = new Shelter<>();
 
@@ -25,7 +25,7 @@ public class ShelterGetIndexOfTest {
     @Test
     public void testDog() {
         // given
-        int numberOfPerson = 10;
+        int numberOfPerson = 13;
         Supplier<Ageable> supplier = Dog::new;
         Shelter<Person> shelter = new Shelter<>();
 
@@ -36,7 +36,7 @@ public class ShelterGetIndexOfTest {
     @Test
     public void testCat() {
         // given
-        int numberOfPerson = 10;
+        int numberOfPerson = 229;
         Supplier<Ageable> supplier = Cat::new;
         Shelter<Person> shelter = new Shelter<>();
 

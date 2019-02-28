@@ -12,7 +12,7 @@ public class SetZipCodeTest {
     public void test1() {
         // Given
         Address address = new Address();
-        String expected = "19720";
+        String expected = "kmpb;fg'";
 
         // when
         address.setZipcode(expected);
@@ -26,7 +26,7 @@ public class SetZipCodeTest {
     public void test2() {
         // Given
         Address address = new Address();
-        String expected = "18713";
+        String expected = "jngrioupu'";
 
         // when
         address.setZipcode(expected);

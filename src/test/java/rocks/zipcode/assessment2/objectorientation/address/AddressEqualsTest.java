@@ -24,11 +24,11 @@ public class AddressEqualsTest {
     @Test
     public void checkNonDefaultAddressEquivalence() {
         // given
-        String providedLine1 = "123 Gitlabs";
-        String providedLine2 = "";
-        String providedCity = "New Castle";
-        String providedState = "Delaware";
-        String providedZipcode = "19720";
+        String providedLine1 = "Y42WETREAT";
+        String providedLine2 = "EFAGRESGR";
+        String providedCity = "O65YRTS";
+        String providedState = "gdsfrgdrts";
+        String providedZipcode = "489486";
         Address address1 = new Address(providedLine1, providedLine2, providedCity, providedState, providedZipcode);
         Address address2 = new Address(providedLine1, providedLine2, providedCity, providedState, providedZipcode);
 
@@ -42,11 +42,11 @@ public class AddressEqualsTest {
     @Test
     public void checkNonDefaultAddressNonEquivalence() {
         // given
-        String providedLine1 = "123 Gitlabs";
-        String providedLine2 = "";
-        String providedCity = "New Castle";
-        String providedState = "Delaware";
-        String providedZipcode = "19720";
+        String providedLine1 = "g54ewgasbreg";
+        String providedLine2 = "dgsaefwaf";
+        String providedCity = "fdsah5eragr";
+        String providedState = "y43grvar";
+        String providedZipcode = "5894861";
         Address address1 = new Address(providedLine1, providedLine2, providedCity, providedState, providedZipcode);
         Address address2 = new Address(providedLine1, providedLine2, providedCity, providedState, "Different Zip");
 

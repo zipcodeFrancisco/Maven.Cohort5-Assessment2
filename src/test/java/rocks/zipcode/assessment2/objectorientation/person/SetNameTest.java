@@ -12,7 +12,7 @@ public class SetNameTest {
     public void test1() {
         // given
         Person person = new Person();
-        String expected = "My Person Name";
+        String expected = "e4auher";
 
         // when
         person.setName(expected);
@@ -26,7 +26,7 @@ public class SetNameTest {
     public void test2() {
         // given
         Person person = new Person();
-        String expected = "My Person Namee";
+        String expected = "huijoigrgae";
 
         // when
         person.setName(expected);

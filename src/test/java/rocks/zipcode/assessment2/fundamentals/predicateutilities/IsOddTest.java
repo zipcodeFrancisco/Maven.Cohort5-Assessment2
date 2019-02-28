@@ -7,22 +7,22 @@ import rocks.zipcode.assessment2.fundamentals.PredicateUtilities;
 public class IsOddTest {
     @Test
     public void test1() {
-        test(0, false);
+        test(10, false);
     }
 
     @Test
     public void test2() {
-        test(1, true);
+        test(11, true);
     }
 
     @Test
     public void test3() {
-        test(2, false);
+        test(22, false);
     }
 
     @Test
     public void test4() {
-        test(3, true);
+        test(53, true);
     }
 
 

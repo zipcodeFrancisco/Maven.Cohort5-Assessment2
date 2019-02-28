@@ -12,7 +12,7 @@ public class SetStateTest {
     public void test1() {
         // Given
         Address address = new Address();
-        String expected = "Pennsylvania";
+        String expected = "rtrtshrstaeht";
 
         // when
         address.setState(expected);
@@ -26,7 +26,7 @@ public class SetStateTest {
     public void test2() {
         // Given
         Address address = new Address();
-        String expected = "Maryland";
+        String expected = "yk4tfjy,jy";
 
         // when
         address.setState(expected);

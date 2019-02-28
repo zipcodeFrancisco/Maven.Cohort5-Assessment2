@@ -14,8 +14,8 @@ public class SetOwnerTest {
     public void setOwnerTest1() {
         // given
         Animal animal = new Animal();
-        Address expectedAddress = new Address("123 MyAddress", "", "", "DE", "");
-        Person expectedOwner = new Person(0L, "", expectedAddress);
+        Address expectedAddress = new Address("yh54gres", "h54hreafe", "nrywre2e", "8948fweaeaw", "aw3rt32fev");
+        Person expectedOwner = new Person(12L, "gvfdsagfds", expectedAddress);
 
         // when
         animal.setOwner(expectedOwner);
@@ -31,8 +31,8 @@ public class SetOwnerTest {
     public void setOwnerTest2() {
         // given
         Animal animal = new Animal();
-        Address expectedAddress = new Address("789 MyAddress", "", "", "AZ", "");
-        Person expectedOwner = new Person(10L, "", expectedAddress);
+        Address expectedAddress = new Address("hrsger", "fdsaf43wfea", "uhgiuw3ijfga", "faiuhfew", "fraheainu");
+        Person expectedOwner = new Person(127L, "jfaoidsaf", expectedAddress);
 
         // when
         animal.setOwner(expectedOwner);

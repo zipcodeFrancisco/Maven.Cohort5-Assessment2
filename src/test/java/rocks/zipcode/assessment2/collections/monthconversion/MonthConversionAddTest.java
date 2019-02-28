@@ -13,7 +13,7 @@ public class MonthConversionAddTest {
         Integer expected = 1;
 
         //When
-        conversion.add(1, "January");
+        conversion.add(1, "hufiewa");
 
         //Then
         Integer actual = conversion.size();
@@ -27,10 +27,10 @@ public class MonthConversionAddTest {
         Integer expected = 4;
 
         //When
-        conversion.add(1, "January");
-        conversion.add(2, "February");
-        conversion.add(3, "March");
-        conversion.add(4, "April");
+        conversion.add(1, "nkjsnfs");
+        conversion.add(2, "j8934g");
+        conversion.add(3, "bvuireq");
+        conversion.add(4, "rh23978hnfd");
 
         //Then
         Integer actual = conversion.size();

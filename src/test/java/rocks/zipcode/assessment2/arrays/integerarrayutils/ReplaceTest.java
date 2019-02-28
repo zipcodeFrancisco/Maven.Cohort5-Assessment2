@@ -11,10 +11,10 @@ public class ReplaceTest {
     @Test
     public void testInsert1() {
         // Given
-        Integer indexToInsertAt = 3;
-        Integer valueToBeInserted = 12;
+        Integer indexToInsertAt = 2;
+        Integer valueToBeInserted = 17;
         Integer[] input = {1,2,5,8};
-        Integer[] expected = {1,2,5,valueToBeInserted};
+        Integer[] expected = {1,2,valueToBeInserted, 8};
 
         // when
         Integer[] actual = IntegerArrayUtils.replace(input, indexToInsertAt, valueToBeInserted);
@@ -26,10 +26,10 @@ public class ReplaceTest {
     @Test
     public void testInsert2() {
         // Given
-        Integer valueToBeInserted = 82;
-        Integer indexToInsertAt = 0;
+        Integer valueToBeInserted = 76;
+        Integer indexToInsertAt = 1;
         Integer[] input = {1,2,5,8};
-        Integer[] expected = {valueToBeInserted,2,5,8};
+        Integer[] expected = {1,valueToBeInserted,5,8};
 
         // when
         Integer[] actual = IntegerArrayUtils.replace(input, indexToInsertAt, valueToBeInserted);

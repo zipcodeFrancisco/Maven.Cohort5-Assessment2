@@ -12,7 +12,7 @@ public class SetAddressLine1 {
     public void test1() {
         // Given
         Address address = new Address();
-        String expected = "123 Cool Street";
+        String expected = "f3w4fewafewf";
 
         // when
         address.setAddressLine1(expected);
@@ -26,7 +26,7 @@ public class SetAddressLine1 {
     public void test2() {
         // Given
         Address address = new Address();
-        String expected = "587 The Lane";
+        String expected = "2t32tfdsag43h";
 
         // when
         address.setAddressLine1(expected);

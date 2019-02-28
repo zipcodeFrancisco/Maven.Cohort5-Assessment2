@@ -10,22 +10,22 @@ public class AddItemToInventroy {
 
     @Test
     public void test0() {
-        test("");
+        test("fdkal");
     }
 
     @Test
     public void test1() {
-        test("Lamp", "Lamp", "Shade", "Lightbulb");
+        test("fda", "wer", "hgfhd", "fdasfd");
     }
 
     @Test
     public void test2() {
-        test("Lamp", "Lamp", "Shade", "Lightbulb", "Lightbulb");
+        test("kytsgdf", "kytsgdf", "kytsgdf", "fda", "khsgd");
     }
 
     @Test
     public void test3() {
-        test("Lamp", "Lamp", "Shade", "Shade");
+        test("kytsgdf", "fea", "l;uyiy", "ofdsi");
     }
 
     private void test(String... itemsToAddToInventory) {

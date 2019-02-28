@@ -7,22 +7,22 @@ import rocks.zipcode.assessment2.fundamentals.PredicateUtilities;
 public class IsEvenTest {
     @Test
     public void test1() {
-        test(0, true);
+        test(6, true);
     }
 
     @Test
     public void test2() {
-        test(1, false);
+        test(7, false);
     }
 
     @Test
     public void test3() {
-        test(2, true);
+        test(8, true);
     }
 
     @Test
     public void test4() {
-        test(3, false);
+        test(9, false);
     }
 
 

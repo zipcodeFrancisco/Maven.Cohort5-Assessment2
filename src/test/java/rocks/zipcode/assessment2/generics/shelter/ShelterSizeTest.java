@@ -14,7 +14,7 @@ public class ShelterSizeTest {
     @Test
     public void testPerson() {
         // given
-        int numberOfPerson = 10;
+        int numberOfPerson = 15;
         Supplier<Ageable> supplier = Person::new;
 
         // when
@@ -24,7 +24,7 @@ public class ShelterSizeTest {
     @Test
     public void testDog() {
         // given
-        int numberOfPerson = 10;
+        int numberOfPerson = 20;
         Supplier<Ageable> supplier = Dog::new;
 
         // when
@@ -34,7 +34,7 @@ public class ShelterSizeTest {
     @Test
     public void testCat() {
         // given
-        int numberOfPerson = 10;
+        int numberOfPerson = 6781;
         Supplier<Ageable> supplier = Cat::new;
 
         // when

@@ -24,13 +24,13 @@ public class AddressToStringTest {
     @Test
     public void testNonNullaryConstructor() {
         // given
-        String providedLine1 = "123 Gitlabs";
-        String providedLine2 = "";
-        String providedCity = "New Castle";
-        String providedState = "Delaware";
-        String providedZipcode = "19720";
+        String providedLine1 = "fsdafdsaf";
+        String providedLine2 = "bh453waf";
+        String providedCity = "br5tfaef";
+        String providedState = "vf32e33qwf";
+        String providedZipcode = "af2132ef";
         Address address = new Address(providedLine1, providedLine2, providedCity, providedState, providedZipcode);
-        String expected = "Address{addressLine1='123 Gitlabs', addressLine2='', city='New Castle', state='Delaware', zipcode='19720'}";
+        String expected = "Address{addressLine1='fsdafdsaf', addressLine2='bh453waf', city='br5tfaef', state='vf32e33qwf', zipcode='af2132ef'}";
 
         // when
         String actual = address.toString();

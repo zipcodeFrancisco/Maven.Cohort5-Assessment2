@@ -12,8 +12,8 @@ public class DecrementOddTest {
     @Test
     public void firstTest() {
         // given
-        Integer[] input =    {2,4,6,11,13,15};
-        Integer[] expected = {2,4,6,10,12,14};
+        Integer[] input =    {2,4,6,11,15,39};
+        Integer[] expected = {2,4,6,10,14,38};
 
         // when
         Integer[] actual = IntegerArrayUtils.decrementOdd(input);
@@ -25,8 +25,8 @@ public class DecrementOddTest {
     @Test
     public void secondTest() {
         // given
-        Integer[] input =    {10,20,30,1,3,5};
-        Integer[] expected = {10,20,30,0,2,4};;
+        Integer[] input =    {10,20,30,11,13,15};
+        Integer[] expected = {10,20,30,10,12,14};
 
         // when
         Integer[] actual = IntegerArrayUtils.decrementOdd(input);

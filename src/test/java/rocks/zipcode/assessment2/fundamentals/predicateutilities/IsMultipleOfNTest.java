@@ -7,27 +7,27 @@ import rocks.zipcode.assessment2.fundamentals.PredicateUtilities;
 public class IsMultipleOfNTest {
     @Test
     public void test1() {
-        test(1, 2,false);
+        test(117, 2,false);
     }
 
     @Test
     public void test2() {
-        test(3, 3, true);
+        test(28, 14, true);
     }
 
     @Test
     public void test3() {
-        test(7, 5, false);
+        test(17, 25, false);
     }
 
     @Test
     public void test4() {
-        test(8, 4, true);
+        test(18, 2, true);
     }
 
     @Test
     public void test5() {
-        test(12, 6, true);
+        test(144, 12, true);
     }
 
 

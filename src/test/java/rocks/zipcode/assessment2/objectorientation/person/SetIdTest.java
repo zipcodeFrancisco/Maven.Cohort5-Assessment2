@@ -12,7 +12,7 @@ public class SetIdTest {
     public void test1() {
         // given
         Person person = new Person();
-        Long expected = Long.MAX_VALUE;
+        Long expected = 51648L;
 
         // when
         person.setId(expected);
@@ -26,7 +26,7 @@ public class SetIdTest {
     public void test2() {
         // given
         Person person = new Person();
-        Long expected = Long.MIN_VALUE;
+        Long expected = 18641L;
 
         // when
         person.setId(expected);

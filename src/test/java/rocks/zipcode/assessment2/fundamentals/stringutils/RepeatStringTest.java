@@ -11,7 +11,7 @@ public class RepeatStringTest {
     @Test
     public void testRepeatHello5Times() {
         // given
-        String stringToRepeat = "Hello";
+        String stringToRepeat = "fjiaeofa";
         Integer numberOfTimesToRepeat = 5;
         String expected = new StringBuilder()
                 .append(stringToRepeat)
@@ -30,7 +30,7 @@ public class RepeatStringTest {
     @Test
     public void testRepeatQuickBrown6Times() {
         // given
-        String stringToRepeat = "Quick Brown";
+        String stringToRepeat = "afwuhinaiwofw";
         Integer numberOfTimesToRepeat = 6;
         String expected = new StringBuilder()
                 .append(stringToRepeat)

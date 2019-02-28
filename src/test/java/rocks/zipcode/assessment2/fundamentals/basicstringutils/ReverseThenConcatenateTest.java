@@ -7,17 +7,17 @@ import rocks.zipcode.assessment2.fundamentals.BasicStringUtils;
 public class ReverseThenConcatenateTest {
     @Test
     public void test1() {
-        test("The", "Quick", "ehTkciuQ");
+        test("Ffau8e", "hTSED", "e8uafFDESTh");
     }
 
     @Test
     public void test2() {
-        test("Brown", "Fox", "nworBxoF");
+        test("I^Yfjg", "ioeg89", "gjfY^I98geoi");
     }
 
     @Test
     public void test3() {
-        test("Jumps", "Over", "spmuJrevO");
+        test("@T#f", "4698=", "f#T@=8964");
     }
 
 

@@ -11,7 +11,7 @@ public class AddTest {
     @Test
     public void testAdd1() {
         // given
-        Integer valueToBeAdded = 10;
+        Integer valueToBeAdded = 7;
         Integer[] intArray = {1, 3, 2, 5, 4, 7, 6};
         Integer[] expected = {1, 3, 2, 5, 4, 7, 6, valueToBeAdded};
 
@@ -25,7 +25,7 @@ public class AddTest {
     @Test
     public void testAdd2() {
         // given
-        Integer firstValueToBeAdded = 10;
+        Integer firstValueToBeAdded = 25;
         Integer secondValueToBeAdded = 17;
         Integer[] intArray = {1, 3, 2, 5, 4, 7, 6};
         Integer[] expected = {1, 3, 2, 5, 4, 7, 6, firstValueToBeAdded, secondValueToBeAdded};

@@ -13,7 +13,7 @@ public class SetAddressTest {
     public void test1() {
         // given
         Person person = new Person();
-        Address expected = new Address();
+        Address expected = new Address("fafdafda", "fdsafdsaf", "fda43wg43", "tyehgrf", "u64y5t43werd");
         
         // when
         person.setAddress(expected);

@@ -11,7 +11,7 @@ public class IsNumericTest {
     @Test
     public void alphaStringTest1() {
         // Given
-        String alphaString = "The quick brown fox jumps";
+        String alphaString = "Ahugieahgejkanf";
 
         // When
         boolean outcome = StringUtils.isNumericString(alphaString);
@@ -23,7 +23,7 @@ public class IsNumericTest {
     @Test
     public void alphaStringTest2() {
         // Given
-        String alphaString = "Over the lazy dog";
+        String alphaString = "HJWGIgijoeajgo";
 
         // When
         boolean outcome = StringUtils.isNumericString(alphaString);
@@ -36,7 +36,7 @@ public class IsNumericTest {
     @Test
     public void numericStringTest1() {
         // Given
-        String alphaString = "1234";
+        String alphaString = "18653";
 
         // When
         boolean outcome = StringUtils.isNumericString(alphaString);
@@ -49,7 +49,7 @@ public class IsNumericTest {
     @Test
     public void numericStringTest2() {
         // Given
-        String alphaString = "Over the lazy dog1";
+        String alphaString = "486416d";
 
         // When
         boolean outcome = StringUtils.isNumericString(alphaString);
@@ -62,7 +62,7 @@ public class IsNumericTest {
     @Test
     public void specialCharacterStringTest1() {
         // Given
-        String alphaString = "!&*(";
+        String alphaString = "!@$*21";
 
         // When
         boolean outcome = StringUtils.isNumericString(alphaString);
@@ -75,7 +75,7 @@ public class IsNumericTest {
     @Test
     public void specialCharacterStringTest2() {
         // Given
-        String alphaString = "Over the lazy dog!";
+        String alphaString = "*!@#&";
 
         // When
         boolean outcome = StringUtils.isNumericString(alphaString);

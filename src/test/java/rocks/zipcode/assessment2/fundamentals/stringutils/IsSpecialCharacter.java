@@ -11,7 +11,7 @@ public class IsSpecialCharacter {
     @Test
     public void alphaStringTest1() {
         // Given
-        String alphaString = "The quick brown fox jumps";
+        String alphaString = "FHIAFAF";
 
         // When
         boolean outcome = StringUtils.isSpecialCharacterString(alphaString);
@@ -23,7 +23,7 @@ public class IsSpecialCharacter {
     @Test
     public void alphaStringTest2() {
         // Given
-        String alphaString = "Over the lazy dog";
+        String alphaString = "FAHWEIFEJNWALFE";
 
         // When
         boolean outcome = StringUtils.isSpecialCharacterString(alphaString);
@@ -36,7 +36,7 @@ public class IsSpecialCharacter {
     @Test
     public void numericStringTest1() {
         // Given
-        String alphaString = "1234";
+        String alphaString = "89461468";
 
         // When
         boolean outcome = StringUtils.isSpecialCharacterString(alphaString);
@@ -49,7 +49,7 @@ public class IsSpecialCharacter {
     @Test
     public void numericStringTest2() {
         // Given
-        String alphaString = "Over the lazy dog1";
+        String alphaString = "4684131684";
 
         // When
         boolean outcome = StringUtils.isSpecialCharacterString(alphaString);
@@ -62,7 +62,7 @@ public class IsSpecialCharacter {
     @Test
     public void specialCharacterStringTest1() {
         // Given
-        String alphaString = "!&*(";
+        String alphaString = "*!(@$&!@";
 
         // When
         boolean outcome = StringUtils.isSpecialCharacterString(alphaString);
@@ -75,12 +75,12 @@ public class IsSpecialCharacter {
     @Test
     public void specialCharacterStringTest2() {
         // Given
-        String alphaString = "Over the lazy dog!";
+        String alphaString = "!&@$)@!@$#";
 
         // When
         boolean outcome = StringUtils.isSpecialCharacterString(alphaString);
 
         // Then
-        Assert.assertFalse(outcome);
+        Assert.assertTrue(outcome);
     }
 }

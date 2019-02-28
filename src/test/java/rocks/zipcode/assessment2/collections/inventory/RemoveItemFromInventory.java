@@ -10,7 +10,7 @@ import java.util.Arrays;
 public class RemoveItemFromInventory {
     @Test
     public void test1() {
-        String itemToBeRemoved = "Football";
+        String itemToBeRemoved = "feawfcda";
         String[] itemsTobeAdded = {"Baseball", "Baseball", "Basketball", itemToBeRemoved};
         test(itemsTobeAdded, itemToBeRemoved);
     }
@@ -18,14 +18,14 @@ public class RemoveItemFromInventory {
 
     @Test
     public void test2() {
-        String itemToBeRemoved = "Baseball";
+        String itemToBeRemoved = "hsfaew";
         String[] itemsTobeAdded = {itemToBeRemoved, itemToBeRemoved, "Basketball", "Football"};
         test(itemsTobeAdded, itemToBeRemoved);
     }
 
     @Test
     public void test3() {
-        String itemToBeRemoved = "Basketball";
+        String itemToBeRemoved = "iufufw";
         String[] itemsTobeAdded = {"Baseball", "Baseball", itemToBeRemoved, "Football"};
         test(itemsTobeAdded, itemToBeRemoved);
     }

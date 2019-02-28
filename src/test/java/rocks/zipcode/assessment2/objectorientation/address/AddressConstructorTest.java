@@ -31,11 +31,11 @@ public class AddressConstructorTest {
     @Test
     public void testNonNullaryConstructor() {
         // given
-        String expectedLine1 = "123 Gitlabs";
-        String expectedLine2 = "";
-        String expectedCity = "New Castle";
-        String expectedState = "Delaware";
-        String expectedZipcode = "19720";
+        String expectedLine1 = "gh45efdsa";
+        String expectedLine2 = "vsg34sw";
+        String expectedCity = "H53EGVDSAF";
+        String expectedState = "Y56HEAGA";
+        String expectedZipcode = "489648";
 
         // when
         Address address = new Address(expectedLine1, expectedLine2, expectedCity, expectedState, expectedZipcode);

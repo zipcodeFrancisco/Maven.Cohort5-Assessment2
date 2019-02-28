@@ -2,6 +2,7 @@ package rocks.zipcode.assessment2.objectorientation.person;
 
 import org.junit.Assert;
 import org.junit.Test;
+import rocks.zipcode.assessment2.objectorientation.Address;
 import rocks.zipcode.assessment2.objectorientation.Person;
 
 /**
@@ -24,7 +25,7 @@ public class PersonEqualsTest {
     @Test
     public void checkDefaultPersonNonEquivalence() {
         // given
-        Person person1 = new Person(null, "PersonName", null);
+        Person person1 = new Person(789123L, "fehafew", new Address());
         Person person2 = new Person();
 
         // when
@@ -37,8 +38,8 @@ public class PersonEqualsTest {
     @Test
     public void checkNonDefaultPersonEquivalence() {
         // given
-        Person person1 = new Person(null, "PersonName", null);
-        Person person2 = new Person(null, "PersonName", null);
+        Person person1 = new Person(78L, "fafewafeaw", new Address());
+        Person person2 = new Person(78L, "fafewafeaw", new Address());
 
         // when
         Boolean outcome = person1.equals(person2);

@@ -11,8 +11,8 @@ public class IncrementEvenDecrementOddTest {
     @Test
     public void testOneEvenElement() {
         //for one even element
-        Integer[] input3 = {38};
-        Integer[] expectedOutput3 = {39};
+        Integer[] input3 = {36};
+        Integer[] expectedOutput3 = {37};
 
         Integer[] actual3 = IntegerArrayUtils.incrementEvenDecrementOdd(input3);
 
@@ -22,8 +22,8 @@ public class IncrementEvenDecrementOddTest {
     @Test
     public void testOneOddElement() {
         //for one odd element
-        Integer[] input4 = {91};
-        Integer[] expectedOutput4 = {90};
+        Integer[] input4 = {97};
+        Integer[] expectedOutput4 = {96};
 
         Integer[] actual4 = IntegerArrayUtils.incrementEvenDecrementOdd(input4);
 
@@ -34,8 +34,8 @@ public class IncrementEvenDecrementOddTest {
     @Test
     public void testOdd() {
         //for odd numbers
-        Integer[] input1 = {101, 25, 11};
-        Integer[] expectedOutput1 = {100, 24, 10};
+        Integer[] input1 = {111, 125, 9};
+        Integer[] expectedOutput1 = {110, 124, 8};
 
         Integer[] actual1 = IntegerArrayUtils.incrementEvenDecrementOdd(input1);
 
@@ -45,8 +45,8 @@ public class IncrementEvenDecrementOddTest {
     @Test
     public void testEven() {
         //for even numbers
-        Integer[] input2 = {34, 18, 700, 128, 110};
-        Integer[] expectedOutput2 = {35, 19, 701, 129, 111};
+        Integer[] input2 = {134, 118, 1700, 1128, 1110};
+        Integer[] expectedOutput2 = {135, 119, 1701, 1129, 1111};
 
         Integer[] actual2 = IntegerArrayUtils.incrementEvenDecrementOdd(input2);
 

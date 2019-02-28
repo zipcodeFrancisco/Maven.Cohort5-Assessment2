@@ -32,9 +32,9 @@ public class PersonConstructorTest {
     @Test
     public void testConstructor() {
         // given
-        Long expectedId = Long.MAX_VALUE;
-        String expectedName = "PersonName";
-        Address expectedAddress = new Address("line1","line2", "city","state","99999");
+        Long expectedId = 12367L;
+        String expectedName = "FEHasuifaf";
+        Address expectedAddress = new Address("faevafe","13e2er132", "dsafdsa","g34qrewqfg","vfeaghtrsf");
         Person person = new Person(expectedId, expectedName, expectedAddress);
 
         // when

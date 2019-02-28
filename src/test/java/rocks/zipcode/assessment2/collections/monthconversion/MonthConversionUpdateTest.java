@@ -10,8 +10,8 @@ public class MonthConversionUpdateTest {
         //Given
         MonthConversion conversion = new MonthConversion();
         Integer month = 5;
-        conversion.add(5, "April");
-        String expectedMonth = "May";
+        conversion.add(5, "faw4grsfd");
+        String expectedMonth = "234rfvs";
 
         //When
         conversion.update(month, expectedMonth);
