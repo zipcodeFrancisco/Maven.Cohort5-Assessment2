@@ -21,6 +21,13 @@
 * isMultipleOfN(Integer,Integer): Boolean
 * startsWithCapitalLetter(String): Boolean
 
+### BasicStringUtils
+* concatentate(String,String): String
+* reverse(String): String
+* reverseThenConcatenate(String,String): String
+* removeCharacters(String,String): String
+* removeCharactersThenReverse(String,String): String
+
 ## Part 2 - Arrays
 ### IntegerArrayUtils
 * `add(Integer[], Integer): Integer[]`
