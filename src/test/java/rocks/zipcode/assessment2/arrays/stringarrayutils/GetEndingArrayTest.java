@@ -19,7 +19,7 @@ public class GetEndingArrayTest {
         String[] actual = StringArrayUtils.getEndingArray(input, startIndex);
 
         // Then
-        Assert.assertEquals(expected, actual);
+        Assert.assertArrayEquals(expected, actual);
     }
 
     @Test
@@ -33,7 +33,7 @@ public class GetEndingArrayTest {
         String[] actual = StringArrayUtils.getEndingArray(input, startIndex);
 
         // Then
-        Assert.assertEquals(expected, actual);
+        Assert.assertArrayEquals(expected, actual);
     }
 
     @Test(expected = IllegalArgumentException.class)
