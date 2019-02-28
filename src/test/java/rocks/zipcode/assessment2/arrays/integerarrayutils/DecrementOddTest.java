@@ -8,12 +8,8 @@ import rocks.zipcode.assessment2.arrays.IntegerArrayUtils;
  * @author leon on 28/11/2018.
  */
 public class DecrementOddTest {
-    @Test
-    public void theTest() {
-        firstTest();
-        secondTest();
-    }
 
+    @Test
     public void firstTest() {
         // given
         Integer[] input =    {2,4,6,11,13,15};
@@ -26,6 +22,7 @@ public class DecrementOddTest {
         Assert.assertArrayEquals(expected, actual);
     }
 
+    @Test
     public void secondTest() {
         // given
         Integer[] input =    {10,20,30,1,3,5};

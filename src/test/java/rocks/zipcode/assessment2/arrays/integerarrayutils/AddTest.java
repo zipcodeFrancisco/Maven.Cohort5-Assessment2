@@ -31,8 +31,8 @@ public class AddTest {
         Integer[] expected = {1, 3, 2, 5, 4, 7, 6, firstValueToBeAdded, secondValueToBeAdded};
 
         // when
-        Integer[] result = IntegerArrayUtils.add(intArray, firstValueToBeAdded);
-        Integer[] actual = IntegerArrayUtils.add(result, secondValueToBeAdded);
+        Integer[] actual = IntegerArrayUtils.add(intArray, firstValueToBeAdded);
+        actual = IntegerArrayUtils.add(actual, secondValueToBeAdded);
 
         // then
         Assert.assertEquals(expected, actual);

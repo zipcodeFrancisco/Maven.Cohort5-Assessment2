@@ -19,7 +19,6 @@ public class IncrementEvenTest {
 
         // when
         Integer[] actual = IntegerArrayUtils.incrementEven(input);
-        System.out.println(Arrays.toString(actual));
 
         // then
         Assert.assertArrayEquals(expected, actual);
