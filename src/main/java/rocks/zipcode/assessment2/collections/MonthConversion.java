@@ -6,11 +6,11 @@ public class MonthConversion {
     }
 
     public String getName(Integer monthNumber) {
-        return null;
+        throw new NullPointerException();
     }
 
-    public Integer getNumber(String monthName) {
-        return null;
+    public int getNumber(String monthName) {
+        return (Integer)null;
     }
 
     public Boolean isValidNumber(Integer monthNumber) {

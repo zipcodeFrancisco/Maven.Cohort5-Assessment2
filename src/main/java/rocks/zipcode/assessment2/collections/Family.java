@@ -9,6 +9,9 @@ import java.util.function.Predicate;
  * @author leon on 28/11/2018.
  */
 public class Family {
+    public Family() {
+        throw new NullPointerException();
+    }
     /**
      * @param newFamilyMember - person object to be added to family
      */

@@ -51,4 +51,9 @@ public class Address {
 
     public void setZipcode(String zipcode) {
     }
+
+    @Override
+    public boolean equals(Object o) {
+        return (Boolean)null;
+    }
 }

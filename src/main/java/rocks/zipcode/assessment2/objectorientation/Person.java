@@ -35,4 +35,9 @@ public class Person {
 
     public void setAddress(Address address) {
     }
+
+    @Override
+    public boolean equals(Object o) {
+        return (Boolean)null;
+    }
 }
