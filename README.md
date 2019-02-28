@@ -14,6 +14,13 @@
 * `isNumericString(String): Boolean`
 * `isSpecialCharacterString(String): Boolean`
 
+### PredicateUtilities
+* isEven(Integer): Boolean
+* isOdd(Integer): Boolean
+* isMultipleOf3(Integer): Boolean
+* isMultipleOfN(Integer,Integer): Boolean
+* startsWithCapitalLetter(String): Boolean
+
 ## Part 2 - Arrays
 ### IntegerArrayUtils
 * `add(Integer[], Integer): Integer[]`
