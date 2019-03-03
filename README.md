@@ -1,8 +1,43 @@
 # Assessment 2
 
-## Part 1 - Fundamentals
+## Frequently Asked Questions
 
-### StringUtils
+| Yes                                | No                               |
+| ---------------------------------- | -------------------------------- |
+| Can I add additional methods?      | Can I **contact** someone other than an instructor for help?
+| Can I add additional classes?      | Can I modify the tests? |
+| Can I use content from my labs?    | Can I add comments to the tests?   |
+| Can I use content from the internet?    |
+| Can I use content from my notebook? |
+| Can I view the test cases? |
+| Does the project become progressively difficult? |
+
+
+## Getting Started
+
+### Setting up the project
+* Ensure that the tests run upon opening the project.
+	* You should see, `Tests Failed: 159 of 159 tests`
+
+
+
+### Part 1 - Fundamentals
+
+#### PredicateUtilities
+* `isEven(Integer): Boolean`
+* `isOdd(Integer): Boolean`
+* `isMultipleOf3(Integer): Boolean`
+* `isMultipleOfN(Integer,Integer): Boolean`
+* `startsWithCapitalLetter(String): Boolean`
+
+#### BasicStringUtils
+* `concatentate(String,String): String`
+* `reverse(String): String`
+* `reverseThenConcatenate(String,String): String`
+* `removeCharacters(String,String): String`
+* `removeCharactersThenReverse(String,String): String`
+
+#### StringUtils
 * `padLeft(String, int): String`
 * `padRight(String, int): String`
 * `repeatString(String, int): String`
@@ -14,40 +49,28 @@
 * `isNumericString(String): Boolean`
 * `isSpecialCharacterString(String): Boolean`
 
-### PredicateUtilities
-* isEven(Integer): Boolean
-* isOdd(Integer): Boolean
-* isMultipleOf3(Integer): Boolean
-* isMultipleOfN(Integer,Integer): Boolean
-* startsWithCapitalLetter(String): Boolean
 
-### BasicStringUtils
-* concatentate(String,String): String
-* reverse(String): String
-* reverseThenConcatenate(String,String): String
-* removeCharacters(String,String): String
-* removeCharactersThenReverse(String,String): String
 
-## Part 2 - Arrays
-### IntegerArrayUtils
+### Part 2 - Arrays
+#### IntegerArrayUtils
 * `add(Integer[], Integer): Integer[]`
 * `swap(Integer[], int, Integer): Integer[]`
 * `get(Integer[], Integer[]): Integer`
 * `incrementEvenDecrementOdd(Integer[]): Integer[]`
 * `incrementEven(Integer[]): Integer[]`
 
-### StringArrayUtils
+#### StringArrayUtils
 * `getSubArray(String[], int, int): String[]`
 * `getEndingArray(String[], int): String[]`
 
-## Part 3 - Object Orientation
+### Part 3 - Object Orientation
 * Complete this section in the following order:
   1. `Address`
   2. `Person`
   3. `Animal`
   4. `Dog`
 
-### Address
+#### Address
 * `Address()`
 * `Address(String, String, String, String, String)`
 * `getAddressLine1(): String`
@@ -61,7 +84,7 @@
 * `getZipcode(): String`
 * `setZipcode(String): void`
 
-### Person
+#### Person
 * `Person()`
 * `Person(Long, String, Address)`
 * `getId(): Long`
@@ -71,7 +94,7 @@
 * `getAddress(): String`
 * `setAddress(String): void`
 
-### Animal
+#### Animal
 * `Animal()`
 * `Animal(Long, Person)`
 * `getId(): Long`
@@ -81,12 +104,12 @@
 * `getAddress(): Address`
 * `setAddress(Address): void`
 
-### Dog
+#### Dog
 * `speak(): String`
 
 
-## Part 4 - Collections
-### Family
+### Part 4 - Collections
+#### Family
 * `add(Person): void`
 * `contains(Person): Boolean`
 * `remove(Person): void`
@@ -100,8 +123,8 @@
 
 
 
-## Part 5 - Generics
-### Shelter
+### Part 5 - Generics
+#### Shelter
 * `Integer size()`
 * `void add(Ageable)`
 * `removeLast()`
