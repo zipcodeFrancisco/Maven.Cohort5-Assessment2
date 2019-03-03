@@ -26,49 +26,6 @@
     * [Part 5 - Generics](./README-Part5.md)
 
 
-
-### Part 1 - Fundamentals
-
-#### PredicateUtilities
-* `isEven(Integer): Boolean`
-* `isOdd(Integer): Boolean`
-* `isMultipleOf3(Integer): Boolean`
-* `isMultipleOfN(Integer,Integer): Boolean`
-* `startsWithCapitalLetter(String): Boolean`
-
-#### BasicStringUtils
-* `concatentate(String,String): String`
-* `reverse(String): String`
-* `reverseThenConcatenate(String,String): String`
-* `removeCharacters(String,String): String`
-* `removeCharactersThenReverse(String,String): String`
-
-#### StringUtils
-* `padLeft(String, int): String`
-* `padRight(String, int): String`
-* `repeatString(String, int): String`
-* `replaceLastSubString(String, String): String`
-* `replaceNthSubstring(String, String, int): String`
-* `getIndexOfNthSubstring(String, String, Integer): Integer`
-* `getNumberOfOccurrences(String, String): Integer`
-* `isAlphaString(String): Boolean`
-* `isNumericString(String): Boolean`
-* `isSpecialCharacterString(String): Boolean`
-
-
-
-### Part 2 - Arrays
-#### IntegerArrayUtils
-* `add(Integer[], Integer): Integer[]`
-* `swap(Integer[], int, Integer): Integer[]`
-* `get(Integer[], Integer[]): Integer`
-* `incrementEvenDecrementOdd(Integer[]): Integer[]`
-* `incrementEven(Integer[]): Integer[]`
-
-#### StringArrayUtils
-* `getSubArray(String[], int, int): String[]`
-* `getEndingArray(String[], int): String[]`
-
 ### Part 3 - Object Orientation
 * Complete this section in the following order:
   1. `Address`
