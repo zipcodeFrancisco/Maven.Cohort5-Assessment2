@@ -18,6 +18,12 @@
 ### Setting up the project
 * Ensure that the tests run upon opening the project.
 	* You should see, `Tests Failed: 159 of 159 tests`
+* Read each of the `README.md`s by clicking the links below
+    * [Part 1 - Fundamentals](./README-Part1.md)
+    * [Part 2 - Arrays](./README-Part2.md)
+    * [Part 3 - Object Orientation](./README-Part3.md)
+    * [Part 4 - Collections](./README-Part4.md)
+    * [Part 5 - Generics](./README-Part5.md)
 
 
 
