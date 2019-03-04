@@ -76,15 +76,16 @@ public class StringUtils {
      */
     // TODO Revisar
     public static Boolean isSpecialCharacterString(String string) {
-//        System.out.println(string);
-        Boolean result1 = isAlphaString(string);
-        Boolean result2 = isNumericString(string);
-//        System.out.println(result1);
-//        System.out.println(result2);
-        Boolean total = result1 && result2;
-
-        System.out.println(total);
-
-        return total;
+        Boolean result = false;
+        String specialChars = "/*!@#$%^&*()\"{}_[]|\\?/<>,.";
+        for (int i = 0; i < string.length(); i++) {
+            if (specialChars.contains(string.substring(i, 1))) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+        return result;
     }
 }
