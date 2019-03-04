@@ -37,7 +37,25 @@ public class StringArrayUtils {
      * @param startingIndex - starting index of array to be spliced
      * @return an array all elements between after `startingIndex`
      */
+    // TODO Revisar
     public static String[] getEndingArray(String[] arrayToBeSpliced, int startingIndex) {
-        return null;
+
+//        System.out.println(Arrays.asList(arrayToBeSpliced));
+//        System.out.println(arrayToBeSpliced.length);
+//        System.out.println(startingIndex);
+            if (arrayToBeSpliced.length > startingIndex) {
+//            System.out.println("Dentro del 1-if");
+                String[] temp = new String[arrayToBeSpliced.length - startingIndex];
+//            System.out.println("OO"+ Arrays.asList(temp));
+                for (int i = 0; i < temp.length; i++) {
+                    temp[i] = arrayToBeSpliced[i + startingIndex];
+                }
+//            System.out.println("Fuera del for: " + Arrays.asList(temp));
+                return temp;
+            }
+//        System.out.println("Antes dle end");
+        String[] expected = {};
+//        System.out.println("End");
+        return (new String[] {});
     }
 }
