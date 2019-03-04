@@ -4,6 +4,9 @@ package rocks.zipcode.assessment2.objectorientation;
  * @author leon on 28/11/2018.
  */
 public class Address {
+
+    
+
     public Address() {
     }
 
