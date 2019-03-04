@@ -17,7 +17,7 @@ public class StringArrayUtils {
 
         try {
             if (((endingIndex - startingIndex) < 0) || (endingIndex >= arrayToBeSpliced.length || startingIndex >= arrayToBeSpliced.length)) {
-                System.out.println("raro");
+//                System.out.println("raro");
             }
             else {
 
@@ -25,21 +25,21 @@ public class StringArrayUtils {
             }
         }
         catch (Exception e){
-            System.out.println("Exception");
+//            System.out.println("Exception");
         }
 
-        System.out.println("After catch");
+//        System.out.println("After catch");
 
         if (endingIndex - startingIndex >= 0) {
-            System.out.println("Entro");
+//            System.out.println("Entro");
             String[] temp = new String[endingIndex - startingIndex];
             Integer c = 0;
             for (int i = startingIndex; i < endingIndex; i++) {
-                System.out.println("1. " + c);
+//                System.out.println("1. " + c);
                 temp[c++] = arrayToBeSpliced[i];
             }
-            System.out.println("yy");
-            System.out.println(Arrays.asList(temp));
+//            System.out.println("yy");
+//            System.out.println(Arrays.asList(temp));
             return temp;
         }
         return arrayToBeSpliced;
