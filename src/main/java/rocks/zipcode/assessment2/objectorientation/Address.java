@@ -85,6 +85,22 @@ public class Address {
 
     @Override
     public boolean equals(Object o) {
-        return (Boolean)null;
+        System.out.println("xxxxx");
+        System.out.println(o);
+
+        if (o == this.city){
+            return true;
+        }
+        Address a = (Address) o;
+        Boolean addressLine1 = this.addressLine1.equals(a.addressLine1);
+        Boolean addressLine2 = this.addressLine2.equals(a.addressLine2);
+        Boolean city = this.city.equals(a.city);
+        Boolean state = this.state.equals(a.state);
+        Boolean zipcode = this.zipcode == a.zipcode;
+
+        System.out.println( addressLine1 + " " + addressLine2 + " " + city + " " + state + " " + zipcode );
+
+        return addressLine1 && addressLine2 && city && state & zipcode;
+//        return (Boolean)null;
     }
 }
